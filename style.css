@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+  background: linear-gradient(to right, #8f94fb, #4e54c8);
+
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 730px;
+  display: flex;
+  margin: 50px auto;
+  border: solid 1px;
+}
+
+.tablero {
+  border: solid #8f94fb;
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+  background: linear-gradient(to right, #8f94fb, #4e54c8);
+
+  padding: 10px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.resultados {
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+  background: linear-gradient(to right, #8f94fb, #4e54c8);
+
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#reset {
+  width: 50%;
+  font-size: 25px;
+  border-radius: 30px;
+  border: none;
+}
+
+.botonesTab {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+footer{
+  text-align: center;
+  margin-bottom: 50px;  
+}
+
+/* crear responsive con 380px */
+@media screen and (max-width: 380px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .tablero {
+    width: 100%;
+  }
+  .resultados {
+    width: 100%;
+  }
+  button {
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+  }
+  #reset {
+    width: 100%;
+    font-size: 20px;
+  }
+  .botonesTab {
+    width: 50px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
